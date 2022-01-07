@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BlankFragment4">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:iss_auto_cycle="true"
+        app:iss_period="1000"
+        app:iss_delay="0"/>
+
+    <ImageView
+        android:id="@+id/image_view_black4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_cloud_download_24"
+
+        android:layout_below="@+id/image_slider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        ></ImageView>
+
+
+    <ImageView
+        android:id="@+id/image_view_black5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/image_view_black4"
+        android:layout_marginStart="250dp"
+        android:src="@drawable/ic_baseline_share_24"
+        android:layout_below="@+id/image_slider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        ></ImageView>
+
+
+</RelativeLayout>
